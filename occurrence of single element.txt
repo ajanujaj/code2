@@ -1,0 +1,17 @@
+def fun():
+    lst=[x for x in input().split(',')]
+    lst1=[]
+    for i in range(len(lst)):
+        for j,k in enumerate(lst):
+            if(lst[i]==k and i!=j):
+                lst1.append(lst[i])
+    
+    if(len(set(lst1))==1):
+        print(set(lst1))
+    else:
+        print('None')
+    
+fun()
+            
+                
+        
